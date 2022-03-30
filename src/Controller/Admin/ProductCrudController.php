@@ -21,12 +21,13 @@ class ProductCrudController extends AbstractCrudController
 
     public function configureFields(string $pageName): iterable
     {
+
          return [
            TextField::new('name'),
            SlugField::new('slug')->setTargetFieldName('name'),
            ImageField::new('illustration')
                ->setBasePath('assets/images/')
-               ->setUploadDir('assets/images/')
+               ->setUploadDir('public/assets/images')
                ->setUploadedFileNamePattern('[randomhash].[extension]')
                ->setRequired(false),
            TextField::new('subtitle'),
@@ -35,5 +36,6 @@ class ProductCrudController extends AbstractCrudController
            AssociationField::new('category')
          ];
     }
+
 
 }
