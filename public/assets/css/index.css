@@ -12,15 +12,50 @@
         font-size: 3.5rem;
     }
 }
+
+body{
+    position: relative;
+}
+
 .navbar-item-custom,
 .navbar-item-custom a {
     color: white;
 }
+
 .footer-custom{
     text-align: center;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     background-color: #dfeaff;
     padding: 25px;
+}
+
+.product-container{
+    margin-bottom: 125px;
+}
+
+.product-item{
+    border: 1px solid gray;
+    margin: 20px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.product-item h5{
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 1px;
+}
+.product-item .product-subtitle{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+.product-item .product-item{
+    font-size: 14px;
+    font-weight: bold;
+}
+.product-page-price{
+    font-size: 19px;
 }
